@@ -1,1 +1,1 @@
-# Different Kinds of ***Sorting** Algorithm.
+# Different Kinds of ***Sorting*** Algorithm.
