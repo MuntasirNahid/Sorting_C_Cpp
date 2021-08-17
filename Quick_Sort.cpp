@@ -27,12 +27,12 @@ int partition(int arr[], int left, int right)
 			left++;
 
 	}
-	return left;
+	return left;//left=right hoye jabey..tokhn ekta pathaye dilei holo
 }
 void quickSort(int arr[], int left, int right)
 {
 	if (left >= right)return;
-	int p = partition(arr, left, right); //kon position e dita vage vag korlo shei position ta..pivot position
+	int p = partition(arr, left, right); //kon position e duita vage vag korlo shei position ta..pivot position
 	
 	quickSort(arr, left, p - 1);
 	
