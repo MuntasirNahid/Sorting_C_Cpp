@@ -1,7 +1,7 @@
 /*
 Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.
- The array is virtually split into a sorted and an unsorted part.
- Values from the unsorted part are picked and placed at the correct position in the sorted part.
+The array is virtually split into a sorted and an unsorted part.
+Values from the unsorted part are picked and placed at the correct position in the sorted part.
 Algorithm:
 To sort an array of size n in ascending order:
 1: Iterate from arr[1] to arr[n] over the array.
@@ -20,7 +20,7 @@ void insertionSort(int arr[], int n)
 		int j = i - 1;
 		while (j >= 0 && arr[j] > key)
 		{
-			arr[j + 1] = arr[j]; //1 step dane niye gelam.
+			arr[j + 1] = arr[j]; //1 step dane niye gelam big element takey.
 			j--;
 		}
 		arr[j + 1] = key; //j er man komtey komtey thik jaygay ashley key takey boshaya dibo.
@@ -39,8 +39,8 @@ int main()
 }
 
 /*
-nsertion sort takes maximum time to sort if elements are sorted in reverse order.
- And it takes minimum time (Order of n) when elements are already sorted.
+Insertion sort takes maximum time to sort if elements are sorted in reverse order.
+And it takes minimum time (Order of n) when elements are already sorted.
 
- Insertion sort is used when number of elements is small. It can also be useful when input array is almost sorted, only few elements are misplaced in complete big array.
+Insertion sort is used when number of elements is small. It can also be useful when input array is almost sorted, only few elements are misplaced in complete big array.
 */
