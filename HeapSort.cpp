@@ -91,8 +91,9 @@ void heapSort(int arr[], int n)
 	// Build heap (rearrange array)
 	for (int i = (n / 2) - 1; i >= 0; i--)//Left and Right child ache ensure korar jonno eikhan theke start hoisey traverse
 		heapify(arr, n, i);
+	//Now Heap structure is done
 	//One by one extract an element from heap
-	for (int i = n - 1; i > 0; i--)
+	for (int i = n - 1; i > 0; i--)//Protibar root er sathey compare korbo..tai 0 bad
 	{
 		//move current root to end
 		swap(arr[0], arr[i]);
