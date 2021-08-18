@@ -54,7 +54,8 @@ and right child by 2 * I + 2 (assuming the indexing starts at 0).
 /*
 Heap Sort Algorithm for sorting in increasing order:
 1. Build a max heap from the input data.
-2. At this point, the largest item is stored at the root of the heap. Replace it with the last item of the heap followed by reducing the size of heap by 1. Finally, heapify the root of the tree.
+2. At this point, the largest item is stored at the root of the heap. Replace it with the last item of the heap followed by reducing the size of heap by 1. 
+Finally, heapify the root of the tree.
 3. Repeat step 2 while size of heap is greater than 1.
 */
 
@@ -88,7 +89,7 @@ void heapify(int arr[], int n, int i)
 void heapSort(int arr[], int n)
 {
 	// Build heap (rearrange array)
-	for (int i = (n / 2) - 1; i >= 0; i--)
+	for (int i = (n / 2) - 1; i >= 0; i--)//Left and Right child ache ensure korar jonno eikhan theke start hoisey traverse
 		heapify(arr, n, i);
 	//One by one extract an element from heap
 	for (int i = n - 1; i > 0; i--)
