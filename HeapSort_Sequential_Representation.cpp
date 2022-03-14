@@ -78,7 +78,7 @@ void Heap::print_heap()
 }
 
 
-int HeapSort(int arr[], int n){
+void HeapSort(int arr[], int n){
     Heap *hp = new Heap();
 
     for (int i = 0; i<n; i++)
