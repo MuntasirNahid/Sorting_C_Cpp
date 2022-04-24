@@ -56,3 +56,9 @@ int main()
 12
 44 33 -11 55 77 90 40 60 99 22 88 66
 */
+
+/*
+The best-case time complexity of quicksort is O(n*logn). Average Case Complexity - It occurs when the array elements are in
+jumbled order that is not properly ascending and not properly descending. 
+The average case time complexity of quicksort is O(n*logn).
+*/
