@@ -40,7 +40,7 @@ void merge(vector<int>&arr, int st, int en, int mid)
 void mergesort(vector<int>&arr, int st, int en)
 {
 	if (st >= en)return;
-	int mid = (st + en) >> 1; //(en-st)/2;
+	int mid = (st + en) >> 1; //(en+st)/2;
 	mergesort(arr, st, mid);
 	mergesort(arr, mid + 1, en);
 
